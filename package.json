@@ -1,6 +1,20 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "svelete-storybook-tailwind",
+  "author": "Jerric Lyns John",
+  "license": "ISC",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public --single",
+    "start:dev": "sirv public --single --dev",
+    "stories": "start-storybook",
+    "build-stories": "build-storybook"
+  },
+  "dependencies": {
+    "sirv-cli": "^0.4.4"
+  },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@storybook/addon-actions": "^5.1.11",
@@ -16,16 +30,5 @@
     "rollup-plugin-terser": "^4.0.4",
     "svelte": "^3.0.0",
     "svelte-loader": "^2.13.6"
-  },
-  "dependencies": {
-    "sirv-cli": "^0.4.4"
-  },
-  "scripts": {
-    "build": "rollup -c",
-    "autobuild": "rollup -c -w",
-    "dev": "run-p start:dev autobuild",
-    "start": "sirv public --single",
-    "start:dev": "sirv public --single --dev",
-    "stories": "start-storybook"
   }
 }
