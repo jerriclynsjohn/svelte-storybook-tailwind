@@ -117,3 +117,7 @@ storiesOf('Button', module)
 ```
 
 9. Run your storyboard `npm run stories`
+
+
+### Add Tailwind into the project
+

@@ -7,5 +7,9 @@
 		color: purple;
 	}
 </style>
-
-<h1>Hello {name}!</h1>
+<div class="p-8">
+	<h1 class="h-3 text-blue-500 text-center" >Hello {name}!!!!</h1>
+</div>
+<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+  Button !
+</button>

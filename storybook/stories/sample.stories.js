@@ -3,6 +3,8 @@ import { action } from '@storybook/addon-actions';
 
 import Button from '../components/button.svelte';
 
+import '../../public/utils.css';
+
 storiesOf('Button', module)
   .add('with text', () => ({
     Component: Button,
