@@ -14,26 +14,26 @@ styles you have to fight to override.
 
 ## Steps to build
 
-1. Clone this repo `git clone https://github.com/jerriclynsjohn/svelete-storybook-tailwind.git`
-2. Go to the directory `cd svelete-storybook-tailwind`
+1. Clone this repo `git clone https://github.com/jerriclynsjohn/svelte-storybook-tailwind.git`
+2. Go to the directory `cd svelte-storybook-tailwind`
 3. Install dependencies `yarn`
-4. To develop your Svelete App: `yarn dev`
-5. To develop UI components independant of your app: `yarn stories`
+4. To develop your Svelte App: `yarn dev`
+5. To develop UI components independent of your app: `yarn stories`
 
 ## Steps to build it all by yourself and some tips
 
 ### Instantiate Svelte App
 
-1. Start the template file using `npx degit sveltejs/template svelete-storybook-tailwind`
-2. Go to the directory `cd svelete-storybook-tailwind`
-3. Install dependencies `yarn`
-4. Try run the svelete app `yarn dev`
+- Start the template file using `npx degit sveltejs/template svelte-storybook-tailwind`
+- Go to the directory `cd svelte-storybook-tailwind`
+- Install dependencies `yarn`
+- Try run the svelte app `yarn dev`
 
 ### Add Tailwind into the project
 
-1. Install dependencies:
-   `yarn add -D tailwindcss @fullhuman/postcss-purgecss autoprefixer postcss postcss-cli postcss-import svelte-preprocess`
-2. Change the rollup config as shown:
+- Install dependencies:
+   `yarn add -D tailwindcss @fullhuman/postcss-purgecss autoprefixer postcss  postcss-import svelte-preprocess`
+- Change the rollup config as shown:
 
 ```javascript
 import svelte from 'rollup-plugin-svelte';
@@ -96,9 +96,9 @@ export default {
 };
 ```
 
-3. Add tailwind config using the command `npx tailwind init`
+- Add tailwind config using the command `npx tailwind init`
 
-4. Add PostCSS config `./postcss.config.js` as follows:
+- Add PostCSS config `./postcss.config.js` as follows:
 
 ```javascript
 const production = !process.env.ROLLUP_WATCH;
@@ -137,12 +137,12 @@ module.exports = {
 };
 ```
 
-5. Build the project with some TailwindCSS utilities `yarn dev`
+- Build the project with some TailwindCSS utilities `yarn dev`
 
-### Add Storybook into the Svelete Project
+### Add Storybook into the Svelte Project
 
-1. Add Storybook dependencies `yarn add -D @storybook/svelte`
-2. Add tailwind configs in the `webpack.config.js` under `.storybook`:
+- Add Storybook dependencies `yarn add -D @storybook/svelte`
+- Add tailwind configs in the `webpack.config.js` under `.storybook`:
 
 ```javascript
 const path = require('path');
@@ -169,7 +169,7 @@ module.exports = ({ config, mode }) => {
 };
 ```
 
-3. Create the `postcss.config.js` under `.storybook`:
+- Create the `postcss.config.js` under `.storybook`:
 
 ```javascript
 var tailwindcss = require('tailwindcss');
@@ -183,7 +183,7 @@ module.exports = {
 };
 ```
 
-4. Add a utils.css file under `storybook/css/` and make sure you `import 'utils.css'` in your
+- Add a utils.css file under `storybook/css/` and make sure you `import 'utils.css'` in your
    `stories.js` files:
 
 ```css
@@ -196,7 +196,7 @@ module.exports = {
 @import 'tailwindcss/utilities';
 ```
 
-5. Add 5 commonly used Storybook [Addons](https://storybook.js.org/addons/):
+- Add 5 commonly used Storybook [Addons](https://storybook.js.org/addons/):
     - [Source](https://github.com/storybookjs/storybook/tree/master/addons/storysource):
       `yarn add -D @storybook/addon-storysource`
     - [Actions](https://github.com/storybookjs/storybook/tree/master/addons/actions):
@@ -207,9 +207,9 @@ module.exports = {
       `yarn add -D @storybook/addon-viewport`
     - [Accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y):
       `yarn add @storybook/addon-a11y --dev`
-6. Make sure you have babel and svelete-loader dependencies
+- Make sure you have babel and svelte-loader dependencies
    `yarn add -D babel-loader @babel/core svelte-loader`
-7. Add npm script in your `package.json`
+- Add npm script in your `package.json`
 
 ```bash
 {
@@ -221,7 +221,7 @@ module.exports = {
 }
 ```
 
-8. Create a config file at the root `.storybook/config.js` with the following content:
+- Create a config file at the root `.storybook/config.js` with the following content:
 
 ```javascript
 import { configure, addParameters, addDecorator } from '@storybook/svelte';
@@ -238,7 +238,7 @@ addDecorator(withA11y);
 addParameters({ viewport: { viewports: newViewports } });
 ```
 
-9. Create an addon file at the root `.storybook/addons.js` with the following content and keep
+- Create an addon file at the root `.storybook/addons.js` with the following content and keep
    adding additional addons in this file.
 
 ```javascript
@@ -249,7 +249,7 @@ import '@storybook/addon-viewport/register';
 import '@storybook/addon-a11y/register';
 ```
 
-10. Add changes to the `webpack.config.js` to accomodate for Source addon:
+- Add changes to the `webpack.config.js` to accomodate for Source addon:
 
 ```javascript
 const path = require('path');
@@ -285,7 +285,7 @@ module.exports = ({ config, mode }) => {
 };
 ```
 
-8. Write your Svelte component in `storybook\components` and yes you can use your regular `.svelte`
+- Write your Svelte component in `storybook\components` and yes you can use your regular `.svelte`
    file. The only thing is that you cant use templates in a story yet, not supported, but yes you
    can compose other components together. For the starter pack lets just create a clickable button.
 
@@ -299,7 +299,7 @@ module.exports = ({ config, mode }) => {
 </button>
 ```
 
-9. Write your stories in `storybook/stories` and you can name any number of story file with
+- Write your stories in `storybook/stories` and you can name any number of story file with
    `<anything>.stories.js`, for the starter package we can create stories of `Button` with the
    readme notes at `<anything>.stories.md`. Note: reference the css here to make sure that tailwind
    is called by postcss:
@@ -323,4 +323,4 @@ storiesOf('Buttons | Buttons', module)
     );
 ```
 
-10. Run your storyboard `yarn stories`
+- Run your storyboard `yarn stories`
