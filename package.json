@@ -1,5 +1,5 @@
 {
-  "name": "svelete-storybook-tailwind",
+  "name": "svelte-storybook-tailwind",
   "author": "Jerric Lyns John",
   "license": "ISC",
   "version": "0.0.1",
@@ -10,7 +10,8 @@
     "start": "sirv public --single",
     "start:dev": "sirv public --single --dev",
     "stories": "start-storybook",
-    "build-stories": "build-storybook"
+    "build-stories": "build-storybook",
+    "static-stories": "build-storybook -c .storybook -o .out"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"
