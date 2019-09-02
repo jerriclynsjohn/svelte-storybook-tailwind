@@ -6,6 +6,17 @@
 
 > Visit this website to see the outcome: [Svelte + TailwindCSS + Storybook](https://svelte-tailwindcss-storybook.netlify.com)
 
+```bash
+// Quickstart
+
+npx degit jerriclynsjohn/svelte-storybook-tailwind my-svelte-project
+cd my-svelte-project
+
+yarn
+yarn dev
+yarn stories
+```
+
 Svelte and TailwindCSS is an awesome combination for Frontend development, but sometimes the setup seems a bit non intuitive, especially when trying to try out this awesome combination. When integrating Storybook, which is another awesome tool for UI Component development and documentation, there is no obvious place to get how it's done. This repo was made to address just that!
 
 > You can easily start your project with this template, instead of wasting time figuring out configurations for each integration.
