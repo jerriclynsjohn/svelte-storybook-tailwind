@@ -1,6 +1,10 @@
-# Svelte + Storybook + Tailwind Starter Pack
+# Svelte + Storybook + Tailwind Starter Template
 
-![](starter-template.jpg)
+![Svelte + TailwindCSS + Storybook Starter Template](starter-template.jpg)
+
+Svelte and TailwindCSS is an awesome combination for Frontend development, but sometimes the setup seems a bit non intuitive, especially when trying to try out this awesome combination. When integrating Storybook, which is another awesome tool for UI Component development and documentation, there is no obvious place to get how it's done. This repo was made to address just that!
+
+You can easily start your project with this template, instead of wasting time figuring out configurations for each integration.
 
 [Storybook](https://storybook.js.org/) is an open source tool for developing JavaScript UI
 components in isolation
@@ -12,6 +16,12 @@ imperative code, that surgically updates the DOM to maintain performance.
 you all of the building blocks you need to build bespoke designs without any annoying opinionated
 styles you have to fight to override.
 
+## What do you get in this repo
+
+1. A fully functional Svelte + TailwindCSS integration with side-by-side implementation of independent Storybook
+2. Storybook with 5 essential Addons
+3. Storybook populated with basic examples of Svelte + TailwindCSS
+
 ## Steps to build
 
 1. Clone this repo `git clone https://github.com/jerriclynsjohn/svelte-storybook-tailwind.git`
@@ -20,7 +30,13 @@ styles you have to fight to override.
 4. To develop your Svelte App: `yarn dev`
 5. To develop UI components independent of your app: `yarn stories`
 
-## Steps to build it all by yourself and some tips
+### Documentations
+
+1. Svelte - [API](https://svelte.dev/docs) and [Tutorial](https://svelte.dev/tutorial/)
+2. TailwindCSS - [Docs](https://tailwindcss.com/docs) and [Tutorial](https://tailwindcss.com/screencasts/)
+3. Storybook - [Docs](https://storybook.js.org/docs/basics/introduction/) and [Tutorial (No Svelte Yet!)](https://www.learnstorybook.com/)
+
+## Steps to build it all by yourself and some tips [Warning: It's lengthy]
 
 ### Instantiate Svelte App
 
@@ -197,15 +213,16 @@ module.exports = {
 ```
 
 - Add 5 commonly used Storybook [Addons](https://storybook.js.org/addons/):
-    - [Source](https://github.com/storybookjs/storybook/tree/master/addons/storysource):
+
+  - [Source](https://github.com/storybookjs/storybook/tree/master/addons/storysource):
       `yarn add -D @storybook/addon-storysource`
-    - [Actions](https://github.com/storybookjs/storybook/tree/master/addons/actions):
+  - [Actions](https://github.com/storybookjs/storybook/tree/master/addons/actions):
       `yarn add -D @storybook/addon-actions`
-    - [Notes](https://github.com/storybookjs/storybook/tree/master/addons/notes):
+  - [Notes](https://github.com/storybookjs/storybook/tree/master/addons/notes):
       `yarn add -D @storybook/addon-notes`
-    - [Viewport](https://github.com/storybookjs/storybook/tree/master/addons/viewport):
+  - [Viewport](https://github.com/storybookjs/storybook/tree/master/addons/viewport):
       `yarn add -D @storybook/addon-viewport`
-    - [Accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y):
+  - [Accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y):
       `yarn add @storybook/addon-a11y --dev`
 - Make sure you have babel and svelte-loader dependencies
    `yarn add -D babel-loader @babel/core svelte-loader`
@@ -249,7 +266,7 @@ import '@storybook/addon-viewport/register';
 import '@storybook/addon-a11y/register';
 ```
 
-- Add changes to the `webpack.config.js` to accomodate for Source addon:
+- Add changes to the `webpack.config.js` to accommodate for Source addon:
 
 ```javascript
 const path = require('path');
