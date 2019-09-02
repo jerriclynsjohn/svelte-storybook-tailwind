@@ -1,6 +1,10 @@
-# Svelte + Storybook + Tailwind Starter Template
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b4aa4a04-e097-4067-87ec-9a6681335673/deploy-status)](https://app.netlify.com/sites/svelte-tailwindcss-storybook/deploys)
+
+# A starter template for Svelte, TailwindCSS and Storybook
 
 ![Svelte + TailwindCSS + Storybook Starter Template](starter-template.jpg)
+
+> Visit this website to see the outcome: [Svelte + TailwindCSS + Storybook](https://svelte-tailwindcss-storybook.netlify.com)
 
 Svelte and TailwindCSS is an awesome combination for Frontend development, but sometimes the setup seems a bit non intuitive, especially when trying to try out this awesome combination. When integrating Storybook, which is another awesome tool for UI Component development and documentation, there is no obvious place to get how it's done. This repo was made to address just that!
 
