@@ -3,6 +3,7 @@
 # A starter template for Svelte, TailwindCSS and Storybook
 
 ![Svelte + TailwindCSS + Storybook Starter Template](starter-template.jpg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjerriclynsjohn%2Fsvelte-storybook-tailwind.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjerriclynsjohn%2Fsvelte-storybook-tailwind?ref=badge_shield)
 
 > Visit this website to see the outcome: [Svelte + TailwindCSS + Storybook](https://svelte-tailwindcss-storybook.netlify.com)
 
@@ -389,3 +390,7 @@ Here are a few examples to help you get an idea of how to build components like 
 You can add more addons and play around with them.
 
 That's a wrap!
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjerriclynsjohn%2Fsvelte-storybook-tailwind.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjerriclynsjohn%2Fsvelte-storybook-tailwind?ref=badge_large)
