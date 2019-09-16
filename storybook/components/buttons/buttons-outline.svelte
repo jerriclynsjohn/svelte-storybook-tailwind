@@ -2,8 +2,18 @@
     export let text = '';
 </script>
 
-<button
-    class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4
-    border border-blue-500 hover:border-transparent rounded">
-    {text}
-</button>
+<style>
+    .btn-outline {
+        @apply font-semibold py-2 px-4;
+    }
+
+    .btn-outline-color {
+        @apply bg-transparent text-blue-700 border border-blue-500 rounded;
+    }
+
+    .btn-outline-color:hover {
+        @apply bg-blue-500 text-white border-transparent;
+    }
+</style>
+
+<button class="btn-outline btn-outline-color">{text}</button>
