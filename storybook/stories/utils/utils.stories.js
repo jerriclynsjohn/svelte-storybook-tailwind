@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/svelte';
 import AlertTraditional from '../../components/alerts/alert-traditional.svelte';
 import AlertModern from '../../components/alerts/alert-modern.svelte';
 import AlertLeftAccent from '../../components/alerts/left-accent.svelte';
-import markdownNotes from './alerts.stories.md';
+import markdownNotes from './utils.stories.md';
 
 storiesOf('Alerts | Alerts', module)
     //Traditional Alert
