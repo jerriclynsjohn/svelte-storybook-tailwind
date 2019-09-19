@@ -1,6 +1,15 @@
 const path = require('path');
 
 module.exports = ({ config, mode }) => {
+    const svelteLoader = config.module.rules.find(
+        r => r.loader && r.loader.includes('svelte-loader'),
+    );
+    svelteLoader.options = {
+        ...svelteLoader.options,
+        emitCss: true,
+        hotReload: false,
+    };
+
     config.module.rules.push(
         {
             test: /\.css$/,
