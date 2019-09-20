@@ -28,7 +28,7 @@ module.exports = {
                     }
 
                     return matchedTokens;
-                }
-            })
-    ]
-}
+                },
+            }),
+    ],
+};
