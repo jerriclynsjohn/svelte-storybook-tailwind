@@ -1,6 +1,6 @@
-# Buttons
+# Alerts
 
-## Examples of building buttons with Tailwind CSS.
+## Examples of building alert components with Tailwind CSS.
 
 ---
 
