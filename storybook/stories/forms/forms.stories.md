@@ -1,11 +1,11 @@
-# Buttons
+# Forms
 
-## Examples of building buttons with Tailwind CSS
+## Examples of building forms with Tailwind CSS
 
 ---
 
-Tailwind doesn't include pre-designed button styles out of the box, but they're
-easy to build using existing utilities.
+Tailwind doesn't include purpose-built form control classes out of the box, but
+form controls are easy to style using existing utilities.
 
 Here are a few examples to help you get an idea of how to build components like
 this using Tailwind.
