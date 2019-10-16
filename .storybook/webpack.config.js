@@ -29,7 +29,7 @@ module.exports = ({ config, mode }) => {
         },
         {
             test: /\.stories\.js?$/,
-            loaders: [require.resolve('@storybook/addon-storysource/loader')],
+            loaders: [require.resolve('@storybook/source-loader')],
             include: [path.resolve(__dirname, '../storybook')],
             enforce: 'pre',
         },
