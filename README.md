@@ -80,7 +80,7 @@ styles you have to fight to override.
 
 1. Svelte - [API](https://svelte.dev/docs) and [Tutorial](https://svelte.dev/tutorial/)
 2. TailwindCSS - [Docs](https://tailwindcss.com/docs) and [Tutorial](https://tailwindcss.com/screencasts/)
-3. Storybook - [Docs](https://storybook.js.org/docs/basics/introduction/) and [Tutorial (No Svelte Yet!)](https://www.learnstorybook.com/)
+3. Storybook - [Docs](https://storybook.js.org/docs/basics/introduction/) and [Tutorial](https://www.learnstorybook.com/intro-to-storybook/svelte/en/get-started/)
 
 ## Steps to build it all by yourself and some tips [Warning: It's lengthy]
 
