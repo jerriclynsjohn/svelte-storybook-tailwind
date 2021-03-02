@@ -1,0 +1,5 @@
+node_modules
+static
+__sapper__
+package-lock.json
+package.json

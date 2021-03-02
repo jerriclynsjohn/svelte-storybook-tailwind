@@ -1,0 +1,31 @@
+{
+    "singleQuote": true,
+    "trailingComma": "all",
+    "useTabs": false,
+    "tabWidth": 4,
+    "printWidth": 100,
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "svelteStrictMode": false,
+    "svelteAllowShorthand": true,
+    "svelteBracketNewLine": false,
+    "svelteIndentScriptAndStyle": true,
+    "plugins": ["prettier-plugin-svelte", "svelte"],
+
+    "overrides": [
+        {
+            "files": [".prettierrc"],
+            "options": { "parser": "json" }
+        },
+        {
+            "files": "*.svx",
+            "options": { "parser": "markdown" }
+        },
+        {
+            "files": ["package.json"],
+            "options": { "printWidth": 180 }
+        }
+    ]
+}

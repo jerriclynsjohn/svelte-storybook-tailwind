@@ -3,6 +3,19 @@ public/utils.*
 package-lock.json
 yarn.lock
 
+.DS_Store
+node_modules
+yarn-error.log
+/__sapper__
+/static/global.css
+.env
+.svx
+.DS_Store
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+
 ### Node ###
 # Logs
 logs

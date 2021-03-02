@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply bg-green-500 hover:bg-green-600 text-white text-base font-bold uppercase py-3 px-15 rounded focus:outline-none flex flex-wrap justify-between;
+    }
+}

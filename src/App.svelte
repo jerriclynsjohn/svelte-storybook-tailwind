@@ -1,4 +1,7 @@
 <script>
+    // TailwindCSS main import
+    import './tailwind.css';
+    
     import Nav from './components/nav.svelte';
     import Button from './components/Button.svelte';
     let menuItems = [

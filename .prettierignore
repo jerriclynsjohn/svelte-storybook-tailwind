@@ -1,3 +1,9 @@
+node_modules
+static
+/__sapper__/
+package-lock.json
+pnpm-lock.yaml
+
 .git/*
 .DS_Store
 
