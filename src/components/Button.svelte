@@ -2,6 +2,8 @@
     export let text = '';
 </script>
 
+<button class="btn-outline btn-outline-color">{text}</button>
+
 <style>
     .btn-outline {
         @apply font-semibold py-2 px-4;
@@ -15,5 +17,3 @@
         @apply bg-red-500 text-white border-transparent;
     }
 </style>
-
-<button class="btn-outline btn-outline-color">{text}</button>

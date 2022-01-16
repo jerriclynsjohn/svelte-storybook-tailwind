@@ -1,0 +1,11 @@
+/public/build/**
+/storybook-static/**
+/.out/**
+/node_modules/**
+package-lock.json
+pnpm-lock.yaml
+yarn-lock.json
+.editorconfig
+.eslintignore
+.prettierignore
+.gitignore
