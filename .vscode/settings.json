@@ -4,6 +4,7 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": false
     },
+    "eslint.packageManager": "pnpm",
     // For activating stylelint config
     "css.validate": false,
     "less.validate": false,
@@ -15,5 +16,6 @@
     // Svelte for VS Code
     "[svelte]": {
         "editor.defaultFormatter": "svelte.svelte-vscode"
-    }
+    },
+    "cSpell.words": ["autodocs", "browserconfig", "favicons", "stylelint", "tailwindcss", "Typecheck"]
 }

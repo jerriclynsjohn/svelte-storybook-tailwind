@@ -1,26 +1,18 @@
-module.exports = {
-    stories: [
-        '../src/**/*.stories.mdx',
-        '../src/**/*.stories.@(js|jsx|ts|tsx|svelte)'
-    ],
+/** @type { import('@storybook/svelte-vite').StorybookConfig } */
+const config = {
+    stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx|svelte)'],
     addons: [
+        '@storybook/addon-svelte-csf',
         '@storybook/addon-links',
         '@storybook/addon-essentials',
-        '@storybook/addon-svelte-csf',
-        '@storybook/addon-storysource',
-        '@storybook/addon-a11y',
-        {
-            name: '@storybook/addon-postcss',
-            options: {
-                postcssLoaderOptions: {
-                    implementation: require('postcss'),
-                },
-            },
-        },
-
+        '@storybook/addon-interactions'
     ],
-    framework: '@storybook/svelte',
-    svelteOptions: {
-        preprocess: require('svelte-preprocess')({ postcss: true })
+    framework: {
+        name: '@storybook/svelte-vite',
+        options: {}
+    },
+    docs: {
+        autodocs: 'tag'
     }
 };
+export default config;

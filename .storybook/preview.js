@@ -1,4 +1,9 @@
+import '../src/index.css';
+
 export const parameters = {
+    backgrounds: {
+        default: 'light'
+    },
     actions: {argTypesRegex: '^on[A-Z].*'},
     controls: {
         matchers: {

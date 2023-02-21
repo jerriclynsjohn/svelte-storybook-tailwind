@@ -1,0 +1,35 @@
+{
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "bracketSameLine": true,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 80,
+    "svelteSortOrder": "options-scripts-markup-styles",
+    "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+    "pluginSearchDirs": false,
+    "overrides": [
+        {
+            "files": "*.svelte",
+            "options": {"parser": "svelte", "printWidth": 100}
+        },
+        {
+            "files": [
+                "*.json",
+                "postcss.config.js",
+                "rollup.config.js",
+                "tailwind.config.js",
+                "stylelint.config.js"
+            ],
+            "options": {
+                "printWidth": 150
+            }
+        },
+        {
+            "files": ["*.json"],
+            "options": {
+                "parser": "json"
+            }
+        }
+    ]
+}

@@ -1,4 +1,12 @@
-/storybook-static/**
-/.out/**
-/public/build/**
-/node_modules/**
+.DS_Store
+node_modules
+.env
+.env.*
+!.env.example
+dist
+storybook-static
+
+# Ignore files for PNPM, NPM and YARN
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
