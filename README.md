@@ -1,4 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b4aa4a04-e097-4067-87ec-9a6681335673/deploy-status)](https://app.netlify.com/sites/svelte-tailwindcss-storybook/deploys)
 # Svelte 3.5 + Storybook 7 + TailwindCSS 3
 
 ![Svelte, Storybook & Tailwind](src/assets/social.jpg)
