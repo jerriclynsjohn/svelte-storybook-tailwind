@@ -10,7 +10,7 @@ Visit the website to see the outcome: [Svelte + Storybook + TailwindCSS](https:/
 npx degit jerriclynsjohn/svelte-storybook-tailwind my-svelte-project
 cd my-svelte-project
 
-npm
+npm install
 npm run dev
 npm run storybook
 ```
